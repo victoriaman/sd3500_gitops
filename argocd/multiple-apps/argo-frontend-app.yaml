@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/hoanglecao/GitOps
+    repoURL: https://github.com/victoriaman/sd3500_gitops
     targetRevision: HEAD
     path: ./argocd/frontend
    
