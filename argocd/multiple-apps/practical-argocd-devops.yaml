@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: practical-argocd-devops
+  namespace: argocd
+spec:
+  description: Project for practical devops apps
+  sourceRepos:
+    - '*'  # Allow all Git repositories (or restrict to your repo)
+  destinations:
+    - namespace: '*'  # Allow deploying to any namespace
+      server: '*'      # Allow deploying to any cluster
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
